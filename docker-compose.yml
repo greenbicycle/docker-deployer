@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  deployer:
+    container_name: ${CONTAINER_NAME}
+    build: .
+    volumes:
+      - ${CODE_PATH}:/code:delegated
+      - ${SCRIPT_PATH}:/usr/local/sbin:delegated
+      - ${SSH_KEY_PATH}:/root/.ssh:delegated
+    ports:
+      - "${SSH_PORT}:22"
+    environment:
+        - TEAMS_WEBHOOK=${TEAMS_WEBHOOK}
+        - PACKAGIST_TOKEN=${PACKAGIST_TOKEN}

@@ -1,0 +1,13 @@
+CONTAINER_NAME=deployer
+
+SSH_PORT=2224
+
+SCRIPT_PATH=./bin
+CODE_PATH=../
+SSH_KEY_PATH=~/.ssh
+
+PACKAGIST_TOKEN=<packagist-token>
+
+# Extra environment variables that you might need for deployment
+TEAMS_WEBHOOK=https://outlook.office.com/webhook/<your-info-here>
+
