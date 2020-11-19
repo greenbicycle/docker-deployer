@@ -1,9 +1,7 @@
 # Deployer Docker container
 
-
-# Deployer docker container
-
-*  For this project, I needed a node.js base container with yarn
+* This is for a project that is php/vuejs based
+* Deployed with deployer and yarn
 
 ## Usage
 
